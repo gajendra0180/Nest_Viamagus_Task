@@ -1,6 +1,6 @@
 ## Description
 
-  <p align="center">This project is created as a challenge for <a href="http://nodejs.org" target="_blank">Viamagus</a> company. This is a basic nest application with simple functionalities like : 
+  <p>This project is created as a challenge for <a href="https://www.viamagus.com/" target="_blank">Viamagus</a> company. This is a basic nest application with simple functionalities like : 
 Ability to create multiple tasks with properties, id, description,due_date, assignee, status, etc.
 
 Ability to add a team with various team members
