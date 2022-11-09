@@ -58,9 +58,17 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## How to use the project
+ Go to the file Curl_APIs and find the curl of all the APIs which I have created. Use the curl to generate the api routes.
+ Now, create env file with the following structure:
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306
+  DB_DATABASE=mynewdb
+  DB_USERNAME=root
+  DB_PASSWORD='your-passowrd;
+  MY_KEY='your-jwt-secret'
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
