@@ -1,0 +1,59 @@
+curl --location --request POST 'http://localhost:3000/task-scheduler/create-task' \
+--header 'authorisationtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjgwMTgyMzMsImV4cCI6MTY2ODAyMTgzM30.8RgeqHnj40_nmNbJ7od8vQfuBz3H96EvTjKBva4GVfE' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "description":"Second Task",
+    "due_date": "23-08-2023"
+}'
+
+
+curl --location --request PUT 'http://localhost:3000/task-scheduler/assign-task' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "taskId":3,
+  "assigneeId":3
+}'
+
+
+curl --location --request POST 'http://localhost:3000/task-scheduler/create-team' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "team_name":"First Team"
+}'
+
+curl --location --request POST 'http://localhost:3000/task-scheduler/add-member' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+   "empId":"EMP0003",
+   "teamNumber":2
+}'
+
+
+curl --location --request PUT 'http://localhost:3000/task-scheduler/update-task' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "taskId":1,
+  "status":"assigned",
+  "description":"updated desc2",
+  "assigneeId":1
+}'
+
+curl --location --request GET 'http://localhost:3000/task-scheduler/get-all-assigned-tasks' \
+--header 'AuthorisationToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjgwMTc2NjB9.-zXG9tgO8-2PHlKN7t6oHtOb_Hc9BCB5CJOZoTkogiE' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "taskId":1,
+  "status":"completed",
+  "description":"updated desc2",
+  "assigneeId":1
+}'
+
+
+curl --location --request GET 'http://localhost:3000/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "taskId":1,
+  "status":"completed",
+  "description":"updated desc2",
+  "assigneeId":1
+}'
