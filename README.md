@@ -61,21 +61,24 @@ $ npm run test:cov
 ## How to use the project
  Go to the file Curl_APIs and find the curl of all the APIs which I have created. Use the curl to generate the api routes.
  Now, create env file with the following structure:
+ 
   DB_CONNECTION=mysql
+  
   DB_HOST=127.0.0.1
+  
   DB_PORT=3306
+  
   DB_DATABASE=mynewdb
+  
   DB_USERNAME=root
-  DB_PASSWORD='your-passowrd;
+  
+  DB_PASSWORD='your-passowrd'
+  
   MY_KEY='your-jwt-secret'
 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Gajendra Pal](https://github.com/gajendra0180)
+- Website - [showwcase](https://www.showwcase.com/gajendra0180)
 
-## License
-
-Nest is [MIT licensed](LICENSE).
