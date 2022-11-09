@@ -5,7 +5,25 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+  <p align="center">This project is created as a challenge for <a href="http://nodejs.org" target="_blank">Viamagus</a> company. This is a basic nest application with simple functionalities like : 
+Ability to create multiple tasks with properties, id, description,due_date, assignee, status, etc.
+
+Ability to add a team with various team members
+
+Ability to assign a task to a team member
+
+Ability to load all tasks with the assignee
+
+Ability to change status/properties of task
+
+Use Typeform for ORM
+
+Use Mysql/Mssql/Mongo for storing the tasks/team info
+
+All the APIs need to be authenticated with a bearer token
+
+Hardcoded user credentials can be used to generate jwt token ( use .env for storing creds)
+</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
@@ -43,19 +61,6 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ## How to use the project
